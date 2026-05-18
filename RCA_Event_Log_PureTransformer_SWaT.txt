@@ -1,0 +1,36 @@
+  Event #1  | Targets: ['MV101']       | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #2  | Targets: ['P102']        | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #3  | Targets: ['LIT101']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #4  | Targets: ['MV504']       | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #6  | Targets: ['AIT202']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #7  | Targets: ['LIT301']      | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #8  | Targets: ['DPIT301']     | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #10 | Targets: ['FIT401']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #11 | Targets: ['FIT401']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #13 | Targets: ['MV304']       | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #14 | Targets: ['MV303']       | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #16 | Targets: ['LIT301']      | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #17 | Targets: ['MV303']       | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #19 | Targets: ['AIT504']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #20 | Targets: ['AIT504']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #21 | Targets: ['MV101', 'LIT101'] | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #22 | Targets: ['UV401', 'AIT502', 'P501'] | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #23 | Targets: ['P602', 'DPIT301', 'MV302'] | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #24 | Targets: ['P203', 'P205'] | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P206
+  Event #25 | Targets: ['LIT401', 'P401'] | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #26 | Targets: ['P101', 'LIT301'] | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #27 | Targets: ['P302', 'LIT401'] | Top-3: ['P603', 'P206', 'P302']     | [Strict] Exact Match -> P302
+  Event #28 | Targets: ['P302']        | Top-3: ['P603', 'P206', 'P302']     | [Strict] Exact Match -> P302
+  Event #29 | Targets: ['P201', 'P203', 'P205'] | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P206
+  Event #30 | Targets: ['LIT101', 'P101', 'MV201'] | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P206
+  Event #31 | Targets: ['LIT401']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #32 | Targets: ['LIT301']      | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302
+  Event #33 | Targets: ['LIT101']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #34 | Targets: ['P101']        | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #35 | Targets: ['P101', 'P102'] | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #36 | Targets: ['LIT101']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #37 | Targets: ['P501', 'FIT502'] | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #38 | Targets: ['AIT402', 'AIT502'] | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #39 | Targets: ['FIT401', 'AIT502'] | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #40 | Targets: ['FIT401']      | Top-3: ['P603', 'P206', 'P302']     | [Miss]
+  Event #41 | Targets: ['LIT301']      | Top-3: ['P603', 'P206', 'P302']     | [Topology] Linkage inferred -> P302

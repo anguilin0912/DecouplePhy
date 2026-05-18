@@ -1,0 +1,6 @@
+numpy
+scikit-learn
+opencv-python-headless
+pandas
+matplotlib
+affiliation@ git+https://github.com/ahstat/affiliation-metrics-py.git

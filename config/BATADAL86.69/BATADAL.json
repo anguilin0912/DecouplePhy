@@ -1,0 +1,16 @@
+{
+  "DecouplePhy": {
+    "_type": "DecouplePhy",
+    "model-file": "./BATADAL.model",
+    "ignore": [
+      "P_J280"
+    ],
+    "max_formel_length": 1,
+    "threshold_factor": 1.1,
+    "cusum_factor": 3,
+    "cpus": 4,
+    "std_factor": 1.00,
+    "dl_multiplier": 0.99,
+    "debounce": 1
+  }
+}

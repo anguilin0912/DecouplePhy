@@ -1,0 +1,14 @@
+  Event #1  | Targets: ['L_T7']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #2  | Targets: ['L_T7']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #3  | Targets: ['L_T1']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Topology] Linkage inferred -> S_PU2
+  Event #4  | Targets: ['L_T1']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Topology] Linkage inferred -> S_PU2
+  Event #5  | Targets: ['F_PU7']       | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #6  | Targets: ['F_PU7']       | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #7  | Targets: ['F_PU7']       | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #8  | Targets: ['L_T3']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #9  | Targets: ['L_T2']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #10 | Targets: ['F_PU3']       | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #11 | Targets: ['F_PU3']       | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #12 | Targets: ['F_PU3']       | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #13 | Targets: ['L_T7']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]
+  Event #14 | Targets: ['L_T4']        | Top-3: ['S_PU2', 'S_PU6', 'F_PU6']  | [Miss]

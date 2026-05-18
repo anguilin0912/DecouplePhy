@@ -1,0 +1,1 @@
+This folder contains the alerts of related work (SIMPLE, TABOR, Invariant, Seq2SeqNN, PASAD，Geco) which we use as comparison in Table 2. These results were reproduced with the help of the IPAL IDS framework. The `*.json` files contain the metrics calculated by the `ipal-evaluate` tool (cf. `eval.sh`).

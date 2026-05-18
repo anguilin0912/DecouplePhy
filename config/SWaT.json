@@ -1,0 +1,15 @@
+{
+    "DecouplePhy": {
+        "_type": "DecouplePhy",
+        "model-file": "./SWaT.model",
+        "ignore": ["P201", "AIT201", "AIT202", "AIT203"],
+        "max_formel_length": 1,
+    	"cpus": 7,
+    	"threshold_factor": 1.1,
+    	"cusum_factor": 3,
+
+    	"std_factor": 1.5,
+    	"dl_multiplier": 1.5,
+    	"debounce": 6
+    }
+}

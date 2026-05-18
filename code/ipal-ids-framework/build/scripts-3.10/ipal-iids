@@ -1,0 +1,5 @@
+#!python
+from ipal_iids import iids
+
+if __name__ == "__main__":
+    iids.main()

@@ -1,0 +1,12 @@
+{
+    "Metric 1: Strict Entity-Level Matching": {
+        "HR@1": "0.00% (0/14)",
+        "HR@3": "0.00% (0/14)",
+        "HR@5": "0.00% (0/14)"
+    },
+    "Metric 2: Topology-Aware Matching": {
+        "HR@1": "0.00% (0/14)",
+        "HR@3": "0.00% (0/14)",
+        "HR@5": "0.00% (0/14)"
+    }
+}

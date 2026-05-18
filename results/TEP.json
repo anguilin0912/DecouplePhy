@@ -1,0 +1,134 @@
+{
+    "tn": 19995,
+    "fp": 0,
+    "fn": 309,
+    "tp": 3701,
+    "Accuracy": 0.9871276817329723,
+    "Precision": 1.0,
+    "Inverse-Precision": 0.9847813238770685,
+    "Recall": 0.9229426433915212,
+    "Inverse-Recall": 1.0,
+    "Fallout": 0.0,
+    "Missrate": 0.0770573566084788,
+    "Informedness": 0.9229426433915213,
+    "Markedness": 0.9847813238770686,
+    "F0.1": 0.9991740397209377,
+    "F0.5": 0.9835760603805676,
+    "F1": 0.9599273764751654,
+    "F2": 0.9373891900106377,
+    "F10": 0.9236473346989506,
+    "MCC": 0.9533607282774469,
+    "Jaccard-Index": 0.9229426433915212,
+    "Jaccard-Distance": 0.07705735660847879,
+    "Detected-Scenarios": [
+        "DA1",
+        "DA2",
+        "SA1",
+        "SA2",
+        "SA3"
+    ],
+    "Detected-Scenarios-Percent": 1.0,
+    "Scenario-Recall": {
+        "DA1": 0,
+        "DA2": 0,
+        "SA1": 0,
+        "SA2": 0,
+        "SA3": 0
+    },
+    "Penalty-Score": 0,
+    "Detection-Delay": 153,
+    "TPA": 20,
+    "FPA": 0,
+    "eTaR": 0.9614713216957606,
+    "eTaP": 1.0,
+    "eTaF0.1": 0.9996033987062327,
+    "eTaF0.5": 0.992049197200494,
+    "eTaF1": 0.980357256372767,
+    "eTaF2": 0.9689376994797819,
+    "eTaF10": 0.9618382361114027,
+    "BATADAL-TTD": 0.9617977528089887,
+    "BATADAL-CLF": 0.9614713216957607,
+    "BATADAL": 0.9616345372523747,
+    "NAB-score-default": 99.80615367925964,
+    "NAB-score-low-fp": 99.80615367925964,
+    "NAB-score-low-fn": 99.87076911950642,
+    "Affiliation-Precision": 1.0,
+    "Affiliation-Recall": 0.9988684435282368,
+    "Affiliation-F0.1": 0.9999887839045913,
+    "Affiliation-F0.5": 0.9997734836528165,
+    "Affiliation-F1": 0.9994339014778952,
+    "Affiliation-F2": 0.9990945499090073,
+    "Affiliation-F10": 0.9988796345056123,
+    "_evaluation-config": {
+        "version": "v1.2.9",
+        "compresslevel": 9,
+        "input": "./output/TEP.state.gz",
+        "output": "./results/TEP.json",
+        "attacks": "./datasets/TEP/attacks.json",
+        "timed_dataset": true,
+        "alarm_gracetime": 60,
+        "fscore_beta": [
+            0.1,
+            0.5,
+            1,
+            2,
+            10
+        ],
+        "eTaPR_theta_p": 0.5,
+        "eTaPR_theta_r": 0.01,
+        "eTaPR_delta": 0.0,
+        "batadal_gamma": 0.5,
+        "nab_profiles": {
+            "default": {
+                "nab_atp": 1,
+                "nab_afp": -0.11,
+                "nab_afn": -1
+            },
+            "reward_low_fp": {
+                "nab_atp": 1,
+                "nab_afp": -0.22,
+                "nab_afn": -1
+            },
+            "reward_low_fn": {
+                "nab_atp": 1,
+                "nab_afp": -0.11,
+                "nab_afn": -2.0
+            }
+        },
+        "log": 30,
+        "logformat": "%(levelname)s:%(name)s: %(message)s",
+        "logfile": "-"
+    },
+    "_iids-config": {
+        "version": "v1.4.11",
+        "compresslevel": 9,
+        "config": "./config/TEP.json",
+        "combiner_config": null,
+        "idss": {
+            "controlInvariantsIDS": {
+                "_type": "DecouplePhy",
+                "model-file": "TEP",
+                "ignore": [],
+                "max_formel_length": 3,
+                "threshold_factor": 1.0,
+                "cusum_factor": 1.0,
+                "cpus": 8
+            }
+        },
+        "combiner": {
+            "_type": "Any",
+            "model-file": null
+        },
+        "train_ipal": null,
+        "train_state": null,
+        "train_combiner": null,
+        "live_ipal": null,
+        "live_state": "./datasets/TEP/DA1.state.gz",
+        "retrain": false,
+        "output": "./output/TEP-DA1.state.gz",
+        "hostname": false,
+        "log": 20,
+        "logformat": "%(levelname)s:%(name)s:%(message)s",
+        "logfile": null
+    }
+}

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ipal-evaluate
+Version: 1.2.9
+Summary: Industrial Intrusion Detection - a tool to evalute the performance of an IDS on IPAL.
+Keywords: IPAL IDS industrial CPS intrusion detection anomaly detection
+Classifier: License :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: opencv-python-headless
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: affiliation@ git+https://github.com/ahstat/affiliation-metrics-py.git
+
+Industrial systems are increasingly threatened by cyber attacks with potentially disastrous consequences. To counter such attacks, industrial intrusion detection systems strive to timely uncover even the most sophisticated breaches. Due to its criticality for society, this fast-growing field attracts researchers from diverse backgrounds, resulting in a huge momentum and diversity of contributions. Consequently, due to a lack of standard interfaces there exists not standard tools for evaluating IDSs. Based on IPAL - a common message format that decouples IIDSs from domain-specific communication protocols, we developed an  tool for scientific evaluation that combines different performance metrics into a single solution.

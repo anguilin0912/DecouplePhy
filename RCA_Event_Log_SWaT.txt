@@ -1,0 +1,36 @@
+  Event #1  | Targets: ['MV101']       | [WARNING] Missed Detection
+  Event #2  | Targets: ['P102']        | Top-3: ['FIT201', 'P102', 'FIT101'] | [Strict] Exact Match -> P102
+  Event #3  | Targets: ['LIT101']      | Top-3: ['LIT101', 'P102', 'MV101']  | [Strict] Exact Match -> LIT101
+  Event #4  | Targets: ['MV504']       | [WARNING] Missed Detection
+  Event #6  | Targets: ['AIT202']      | Top-3: ['P203', 'P102', 'FIT503']   | [Miss]
+  Event #7  | Targets: ['LIT301']      | Top-3: ['LIT301', 'P102', 'MV201']  | [Strict] Exact Match -> LIT301
+  Event #8  | Targets: ['DPIT301']     | Top-3: ['LIT401', 'MV302', 'P602']  | [Topology] Linkage inferred -> MV302
+  Event #10 | Targets: ['FIT401']      | Top-3: ['FIT501', 'FIT401', 'FIT504'] | [Strict] Exact Match -> FIT401
+  Event #11 | Targets: ['FIT401']      | Top-3: ['FIT501', 'FIT401', 'FIT504'] | [Strict] Exact Match -> FIT401
+  Event #13 | Targets: ['MV304']       | [WARNING] Missed Detection
+  Event #14 | Targets: ['MV303']       | [WARNING] Missed Detection
+  Event #16 | Targets: ['LIT301']      | Top-3: ['LIT301', 'P203', 'P205']   | [Strict] Exact Match -> LIT301
+  Event #17 | Targets: ['MV303']       | Top-3: ['MV303', 'P602', 'MV301']   | [Strict] Exact Match -> MV303
+  Event #19 | Targets: ['AIT504']      | Top-3: ['AIT504', 'FIT601', 'FIT503'] | [Strict] Exact Match -> AIT504
+  Event #20 | Targets: ['AIT504']      | Top-3: ['AIT504', 'AIT503', 'FIT501'] | [Strict] Exact Match -> AIT504
+  Event #21 | Targets: ['MV101', 'LIT101'] | Top-3: ['LIT101', 'FIT501', 'FIT401'] | [Strict] Exact Match -> LIT101
+  Event #22 | Targets: ['UV401', 'AIT502', 'P501'] | Top-3: ['FIT501', 'FIT401', 'FIT504'] | [Topology] Linkage inferred -> FIT401
+  Event #23 | Targets: ['P602', 'DPIT301', 'MV302'] | Top-3: ['LIT401', 'DPIT301', 'P101'] | [Strict] Exact Match -> DPIT301
+  Event #24 | Targets: ['P203', 'P205'] | Top-3: ['P205', 'P203', 'P206']     | [Strict] Exact Match -> P205
+  Event #25 | Targets: ['LIT401', 'P401'] | Top-3: ['LIT401', 'P206', 'P204']   | [Strict] Exact Match -> LIT401
+  Event #26 | Targets: ['P101', 'LIT301'] | Top-3: ['LIT301', 'FIT201', 'P102'] | [Strict] Exact Match -> LIT301
+  Event #27 | Targets: ['P302', 'LIT401'] | Top-3: ['LIT401', 'FIT503', 'AIT503'] | [Strict] Exact Match -> LIT401
+  Event #28 | Targets: ['P302']        | Top-3: ['LIT401', 'FIT501', 'FIT401'] | [Miss]
+  Event #29 | Targets: ['P201', 'P203', 'P205'] | [WARNING] Missed Detection
+  Event #30 | Targets: ['LIT101', 'P101', 'MV201'] | Top-3: ['LIT101', 'P101', 'MV201']  | [Strict] Exact Match -> LIT101
+  Event #31 | Targets: ['LIT401']      | Top-3: ['LIT401', 'FIT504', 'MV304'] | [Strict] Exact Match -> LIT401
+  Event #32 | Targets: ['LIT301']      | Top-3: ['LIT301', 'P101', 'MV201']  | [Strict] Exact Match -> LIT301
+  Event #33 | Targets: ['LIT101']      | Top-3: ['LIT101', 'MV101', 'P302']  | [Strict] Exact Match -> LIT101
+  Event #34 | Targets: ['P101']        | Top-3: ['P101', 'MV201', 'P205']    | [Strict] Exact Match -> P101
+  Event #35 | Targets: ['P101', 'P102'] | Top-3: ['P101', 'MV201', 'P102']    | [Strict] Exact Match -> P101
+  Event #36 | Targets: ['LIT101']      | Top-3: ['LIT101', 'P101', 'MV201']  | [Strict] Exact Match -> LIT101
+  Event #37 | Targets: ['P501', 'FIT502'] | Top-3: ['FIT502', 'FIT501', 'FIT401'] | [Strict] Exact Match -> FIT502
+  Event #38 | Targets: ['AIT402', 'AIT502'] | Top-3: ['AIT502', 'AIT402', 'FIT501'] | [Strict] Exact Match -> AIT502
+  Event #39 | Targets: ['FIT401', 'AIT502'] | Top-3: ['FIT501', 'FIT401', 'AIT502'] | [Strict] Exact Match -> FIT401
+  Event #40 | Targets: ['FIT401']      | Top-3: ['FIT501', 'FIT401', 'FIT504'] | [Strict] Exact Match -> FIT401
+  Event #41 | Targets: ['LIT301']      | Top-3: ['LIT301', 'P501', 'UV401']  | [Strict] Exact Match -> LIT301

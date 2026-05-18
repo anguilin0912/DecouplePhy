@@ -1,0 +1,1136 @@
+{
+    "_name": "DecouplePhy",
+    "settings": {
+        "_type": "DecouplePhy",
+        "model-file": "./HAI.model",
+        "ignore": [
+            "P1_PCV02Z",
+            "P2_SIT01",
+            "P2_SIT02",
+            "P2_VT01",
+            "P2_VXT02",
+            "P2_VXT03",
+            "P2_VYT02"
+        ],
+        "max_formel_length": 1,
+        "cpus": 7,
+        "threshold_factor": 1.1,
+        "cusum_factor": 3,
+        "std_factor": 2,
+        "dl_multiplier": 1.2,
+        "debounce": 2
+    },
+    "incomplete": false,
+    "CI": {
+        "P1_B2004": {
+            "error": 1.0277285028234007e-08,
+            "equation": "Sum",
+            "combination": [
+                "P1_B2004",
+                "P4_ST_PT01"
+            ],
+            "parameters": [
+                1.000012507347434,
+                -9.451089791815422e-08,
+                0.00094854970909204
+            ],
+            "drift": 0.00020639456929517406,
+            "threshold": 0.06807321743331687
+        },
+        "P1_B2016": {
+            "error": 1.4796555241137492e-05,
+            "equation": "Sum",
+            "combination": [
+                "P1_B2016",
+                "P4_ST_LD"
+            ],
+            "parameters": [
+                0.919460257908234,
+                0.0003119904429391794,
+                0.008283221615106553
+            ],
+            "drift": 0.010667492886612302,
+            "threshold": 0.22294490050421747
+        },
+        "P1_B3004": {
+            "error": 0.00417924657536391,
+            "equation": "Product",
+            "combination": [
+                "P1_B3004",
+                "P1_LIT01"
+            ],
+            "parameters": [
+                1.0037068280043495,
+                -0.003723715313194157,
+                0.009549143545896284
+            ],
+            "drift": 0.13771025997852368,
+            "threshold": 44.2470788093803
+        },
+        "P1_B3005": {
+            "error": 0.061044937460025595,
+            "equation": "Sum",
+            "combination": [
+                "P1_B3005",
+                "P1_FT03Z"
+            ],
+            "parameters": [
+                1.0299772958311653,
+                -0.030104482644039247,
+                0.13491402523156484
+            ],
+            "drift": 0.5523931301489461,
+            "threshold": 234.25792360629904
+        },
+        "P1_B4002": {
+            "error": 2.1211519292095603e-06,
+            "equation": "Product",
+            "combination": [
+                "P1_B4002",
+                "P1_TIT01"
+            ],
+            "parameters": [
+                0.9999814186117845,
+                -4.179517341979082e-05,
+                0.0020872091322101808
+            ],
+            "drift": 0.002968747421512943,
+            "threshold": 1.6070362505055622
+        },
+        "P1_B4005": {
+            "error": 0.001299548822353938,
+            "equation": "Product",
+            "combination": [
+                "P1_B4005",
+                "P1_TIT02"
+            ],
+            "parameters": [
+                0.9998190792794673,
+                -0.013057061681757047,
+                0.4882437908868925
+            ],
+            "drift": 0.095110451051293,
+            "threshold": 26.33146026291044
+        },
+        "P1_B400B": {
+            "error": 294.5450191009949,
+            "equation": "Product",
+            "combination": [
+                "P1_B400B",
+                "P1_FT02Z"
+            ],
+            "parameters": [
+                -0.0006086808583865011,
+                1.000492700429912,
+                0.21461220991171318
+            ],
+            "drift": 40.107910904851536,
+            "threshold": 11255.94582266624
+        },
+        "P1_B4022": {
+            "error": 0.00020206645509300464,
+            "equation": "Sum",
+            "combination": [
+                "P1_B4022",
+                "P4_ST_LD"
+            ],
+            "parameters": [
+                0.9952663263550202,
+                0.0001569866408676955,
+                0.119164880175259
+            ],
+            "drift": 0.03913777108589544,
+            "threshold": 1.0657401684789871
+        },
+        "P1_FCV01D": {
+            "error": 0.1643821603912976,
+            "equation": "Sum",
+            "combination": [
+                "P1_FCV01D",
+                "P1_FCV02D"
+            ],
+            "parameters": [
+                1.0010741658570737,
+                0.0015753625740400907,
+                -0.10175132892266943
+            ],
+            "drift": 0.9952641255200582,
+            "threshold": 98.35594335845084
+        },
+        "P1_FCV01Z": {
+            "error": 0.13922024995118112,
+            "equation": "Sum",
+            "combination": [
+                "P1_FCV01Z",
+                "P1_FCV01D"
+            ],
+            "parameters": [
+                0.8011141227856233,
+                0.1988318460577858,
+                -0.03776026277011137
+            ],
+            "drift": 0.9469192674412288,
+            "threshold": 17.857950398022357
+        },
+        "P1_FCV02D": {
+            "error": 201.0736652976837,
+            "equation": "Product",
+            "combination": [
+                "P1_FCV02D",
+                "P1_FCV02Z"
+            ],
+            "parameters": [
+                0.7770481823004937,
+                0.2197345902319517,
+                1.209212338608015
+            ],
+            "drift": 32.993826893724254,
+            "threshold": 100.1945544531975
+        },
+        "P1_FCV02Z": {
+            "error": 0.4679793622768444,
+            "equation": "Product",
+            "combination": [
+                "P1_FCV02Z",
+                "P1_FCV02D"
+            ],
+            "parameters": [
+                0.9941773407243116,
+                0.005781590176513686,
+                -0.028893385411045584
+            ],
+            "drift": 1.6555122916611906,
+            "threshold": 3.01104286730892
+        },
+        "P1_FCV03D": {
+            "error": 0.0022211501399331426,
+            "equation": "Sum",
+            "combination": [
+                "P1_FCV03D",
+                "P1_FCV03Z"
+            ],
+            "parameters": [
+                1.00809764508332,
+                -0.008002764766590618,
+                0.00022955977955336698
+            ],
+            "drift": 0.12700833767720282,
+            "threshold": 14.916061948082035
+        },
+        "P1_FCV03Z": {
+            "error": 0.004702085385439178,
+            "equation": "Product",
+            "combination": [
+                "P1_FCV03Z",
+                "P1_FCV03D"
+            ],
+            "parameters": [
+                0.9733812919266228,
+                0.027118531507477308,
+                -0.010244978157801343
+            ],
+            "drift": 0.15559627156454955,
+            "threshold": 10.412752284598545
+        },
+        "P1_FT01": {
+            "error": 8.988137156848987,
+            "equation": "Sum",
+            "combination": [
+                "P1_FT01",
+                "P1_LCV01Z"
+            ],
+            "parameters": [
+                0.9386105857260469,
+                0.5470086880315477,
+                5.2930372793703615
+            ],
+            "drift": 7.838568452921342,
+            "threshold": 309.71990333684056
+        },
+        "P1_FT01Z": {
+            "error": 97.2032794866241,
+            "equation": "Product",
+            "combination": [
+                "P1_FT01Z",
+                "P1_FT01"
+            ],
+            "parameters": [
+                0.7098524756784088,
+                0.819375476286204,
+                95.50866651727138
+            ],
+            "drift": 24.30425336549206,
+            "threshold": 2340.068168277164
+        },
+        "P1_FT02": {
+            "error": 287.44657427957253,
+            "equation": "Product",
+            "combination": [
+                "P1_FT02",
+                "P1_FCV02D"
+            ],
+            "parameters": [
+                0.9940403151080894,
+                -0.1525309256316021,
+                11.031164808400604
+            ],
+            "drift": 44.13039139309021,
+            "threshold": 4601.934966258915
+        },
+        "P1_FT02Z": {
+            "error": 536.2748060478775,
+            "equation": "Sum",
+            "combination": [
+                "P1_FT02Z",
+                "P1_B400B"
+            ],
+            "parameters": [
+                1.6332341526269354,
+                -0.6336137241734017,
+                0.7188309901717711
+            ],
+            "drift": 59.22057659242944,
+            "threshold": 2937.492369604063
+        },
+        "P1_FT03": {
+            "error": 0.3662722042885276,
+            "equation": "Product",
+            "combination": [
+                "P1_FT03",
+                "P1_B3005"
+            ],
+            "parameters": [
+                0.9711321667542314,
+                0.015615957596726567,
+                -8.407867115658108
+            ],
+            "drift": 1.6559132063222683,
+            "threshold": 34.45986317656963
+        },
+        "P1_FT03Z": {
+            "error": 1.1600529813624625,
+            "equation": "Product",
+            "combination": [
+                "P1_FT03Z",
+                "P1_B3005"
+            ],
+            "parameters": [
+                0.9317402066111035,
+                0.06813507756056339,
+                0.1313764744623498
+            ],
+            "drift": 2.9276378743281715,
+            "threshold": 84.14638436649044
+        },
+        "P1_LCV01D": {
+            "error": 0.0025533610058880757,
+            "equation": "Product",
+            "combination": [
+                "P1_LCV01D",
+                "P1_LCV01Z"
+            ],
+            "parameters": [
+                1.0291322303617443,
+                -0.029248609586725705,
+                -0.004069477133066185
+            ],
+            "drift": 0.13733571241303685,
+            "threshold": 10.485721709893507
+        },
+        "P1_LCV01Z": {
+            "error": 0.009167344463976502,
+            "equation": "Sum",
+            "combination": [
+                "P1_LCV01Z",
+                "P1_LCV01D"
+            ],
+            "parameters": [
+                0.9442303290540563,
+                0.05681728683680575,
+                -0.02336570609699249
+            ],
+            "drift": 0.22561090656388794,
+            "threshold": 7.717548886781278
+        },
+        "P1_LIT01": {
+            "error": 0.014120836994448908,
+            "equation": "Sum",
+            "combination": [
+                "P1_LIT01",
+                "P1_PIT01"
+            ],
+            "parameters": [
+                0.9999234028791429,
+                -0.7711368056396147,
+                1.0887160014678547
+            ],
+            "drift": 0.327746835305003,
+            "threshold": 35.70337936299588
+        },
+        "P1_PCV01D": {
+            "error": 0.0032689433495978137,
+            "equation": "Sum",
+            "combination": [
+                "P1_PCV01D",
+                "P4_ST_LD"
+            ],
+            "parameters": [
+                0.9997013428159237,
+                0.001497864194908562,
+                -0.4753716620655031
+            ],
+            "drift": 0.14623064551262183,
+            "threshold": 20.850566198891986
+        },
+        "P1_PCV01Z": {
+            "error": 0.02870448265978074,
+            "equation": "Product",
+            "combination": [
+                "P1_PCV01Z",
+                "P1_PCV01D"
+            ],
+            "parameters": [
+                0.9314094686669441,
+                0.06898883679455126,
+                0.03951345868456426
+            ],
+            "drift": 0.41879319571801216,
+            "threshold": 4.042416573379037
+        },
+        "P1_PCV02D": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_PCV02D"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_PIT01": {
+            "error": 6.151024892496336e-05,
+            "equation": "Product",
+            "combination": [
+                "P1_PIT01",
+                "P4_ST_PT01"
+            ],
+            "parameters": [
+                1.0470815062589514,
+                -0.0002153021617097419,
+                2.098907937866513
+            ],
+            "drift": 0.017717627132559585,
+            "threshold": 4.327781570638655
+        },
+        "P1_PIT02": {
+            "error": 0.0015650529716829708,
+            "equation": "Product",
+            "combination": [
+                "P1_PIT02",
+                "P1_FCV02D"
+            ],
+            "parameters": [
+                0.9971658788020173,
+                2.1019119603060687e-05,
+                0.0009550903385573822
+            ],
+            "drift": 0.09291482296449766,
+            "threshold": 40.633682099574095
+        },
+        "P1_PP01AD": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_PP01AD"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_PP01AR": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_PP01AR"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_PP01BD": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_PP01BD"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_PP01BR": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_PP01BR"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_PP02D": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_PP02D"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_PP02R": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_PP02R"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_STSP": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P1_STSP"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P1_TIT01": {
+            "error": 0.00018332607756392928,
+            "equation": "Product",
+            "combination": [
+                "P1_TIT01",
+                "P1_TIT02"
+            ],
+            "parameters": [
+                0.9979733582193423,
+                0.0010473153114723733,
+                0.034088675266439286
+            ],
+            "drift": 0.03698284328241537,
+            "threshold": 0.02727173203531265
+        },
+        "P1_TIT02": {
+            "error": 0.00018020440147962664,
+            "equation": "Sum",
+            "combination": [
+                "P1_TIT02",
+                "P1_TIT01"
+            ],
+            "parameters": [
+                1.0009941146085402,
+                -0.002571705433745987,
+                0.055480546234839834
+            ],
+            "drift": 0.03674038227812487,
+            "threshold": 0.027338649112226
+        },
+        "P2_24Vdc": {
+            "error": 1.0632755046759059e-05,
+            "equation": "Product",
+            "combination": [
+                "P2_24Vdc",
+                "P2_VYT03"
+            ],
+            "parameters": [
+                0.0406927124944609,
+                0.0007294239222106631,
+                26.883205262134673
+            ],
+            "drift": 0.009121151643284486,
+            "threshold": 0.008637540565910973
+        },
+        "P2_ASD": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_ASD"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_AutoGO": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_AutoGO"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_CO_rpm": {
+            "error": 295.09083815779667,
+            "equation": "Sum",
+            "combination": [
+                "P2_CO_rpm",
+                "P3_PIT01"
+            ],
+            "parameters": [
+                0.41939240316417625,
+                0.004759285786676089,
+                31410.810032243964
+            ],
+            "drift": 47.8666096307705,
+            "threshold": 54.91164389037614
+        },
+        "P2_Emerg": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_Emerg"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_HILout": {
+            "error": 60.75310659466711,
+            "equation": "Sum",
+            "combination": [
+                "P2_HILout",
+                "P2_CO_rpm"
+            ],
+            "parameters": [
+                0.21515233434282832,
+                0.072344940144518,
+                -3355.429076684648
+            ],
+            "drift": 21.849798059817868,
+            "threshold": 12.362376811125973
+        },
+        "P2_MSD": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_MSD"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_ManualGO": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_ManualGO"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_OnOff": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_OnOff"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_RTR": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_RTR"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_TripEx": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_TripEx"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_VTR01": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_VTR01"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_VTR02": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_VTR02"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_VTR03": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_VTR03"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_VTR04": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P2_VTR04"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P2_VYT03": {
+            "error": 0.028228753562151643,
+            "equation": "Sum",
+            "combination": [
+                "P2_VYT03",
+                "P1_FCV03D"
+            ],
+            "parameters": [
+                0.8549583348428604,
+                -0.0006740439788234682,
+                0.9319818502622464
+            ],
+            "drift": 0.46992636685160005,
+            "threshold": 0.8037102156155853
+        },
+        "P3_FIT01": {
+            "error": 29458.353173781692,
+            "equation": "Sum",
+            "combination": [
+                "P3_FIT01",
+                "P3_PIT01"
+            ],
+            "parameters": [
+                1.0141851041928653,
+                -0.04673355302104396,
+                14.157984663964836
+            ],
+            "drift": 409.87300413499975,
+            "threshold": 3809.611579739204
+        },
+        "P3_LCP01D": {
+            "error": 30825.34972939815,
+            "equation": "Product",
+            "combination": [
+                "P3_LCP01D",
+                "P3_FIT01"
+            ],
+            "parameters": [
+                0.9720502046146395,
+                0.0918648620895539,
+                22.748677481871095
+            ],
+            "drift": 455.07770327661933,
+            "threshold": 1536.6497550333513
+        },
+        "P3_LCV01D": {
+            "error": 22544.49402207642,
+            "equation": "Sum",
+            "combination": [
+                "P3_LCV01D",
+                "P4_HT_LD"
+            ],
+            "parameters": [
+                0.849960714392523,
+                31.268544939684745,
+                8.064065915083589
+            ],
+            "drift": 371.3351370270971,
+            "threshold": 4370.7859798282625
+        },
+        "P3_LH": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P3_LH"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P3_LIT01": {
+            "error": 459.70235742781404,
+            "equation": "Sum",
+            "combination": [
+                "P3_LIT01",
+                "P3_PIT01"
+            ],
+            "parameters": [
+                0.9999527907053495,
+                0.02782426809073202,
+                -17.534134378734713
+            ],
+            "drift": 58.57984420089038,
+            "threshold": 246.43200529251885
+        },
+        "P3_LL": {
+            "error": 0.0,
+            "equation": "Sum",
+            "combination": [
+                "P3_LL"
+            ],
+            "parameters": [
+                1.0,
+                0.0
+            ],
+            "drift": 0.0,
+            "threshold": 1e-06
+        },
+        "P3_PIT01": {
+            "error": 6426.342014197339,
+            "equation": "Product",
+            "combination": [
+                "P3_PIT01",
+                "P3_FIT01"
+            ],
+            "parameters": [
+                0.9725534095940246,
+                0.024964511729422725,
+                -10.81029816432985
+            ],
+            "drift": 189.0063661316713,
+            "threshold": 1721.6128006388112
+        },
+        "P4_HT_FD": {
+            "error": 3.7889912876046107e-06,
+            "equation": "Sum",
+            "combination": [
+                "P4_HT_FD",
+                "P4_HT_LD"
+            ],
+            "parameters": [
+                0.21040935222040402,
+                1.221913378058609e-05,
+                -0.0004981515885778943
+            ],
+            "drift": 0.004564079658485113,
+            "threshold": 0.07657368000454817
+        },
+        "P4_HT_LD": {
+            "error": 1.980091488350964,
+            "equation": "Product",
+            "combination": [
+                "P4_HT_LD",
+                "P4_HT_FD"
+            ],
+            "parameters": [
+                1.006331309960204,
+                -592.8837619633678,
+                -0.27620717480555396
+            ],
+            "drift": 3.5081577395206036,
+            "threshold": 33.01043531208296
+        },
+        "P4_HT_PO": {
+            "error": 0.3417231500465036,
+            "equation": "Sum",
+            "combination": [
+                "P4_HT_PO",
+                "P3_LCV01D"
+            ],
+            "parameters": [
+                0.11740197022382266,
+                0.004056410592401787,
+                1.0482156681570898
+            ],
+            "drift": 1.4580092196469514,
+            "threshold": 12.218588250324354
+        },
+        "P4_HT_PS": {
+            "error": 0.0009259151287861428,
+            "equation": "Product",
+            "combination": [
+                "P4_HT_PS",
+                "P1_FCV02Z"
+            ],
+            "parameters": [
+                0.9999985231322555,
+                3.2566369032460305e-06,
+                -6.001407211392529e-06
+            ],
+            "drift": 0.06103349295708133,
+            "threshold": 9.938939629754511
+        },
+        "P4_LD": {
+            "error": 6.366935587697213,
+            "equation": "Sum",
+            "combination": [
+                "P4_LD",
+                "P4_HT_PO"
+            ],
+            "parameters": [
+                1.021051261898077,
+                -0.0529958650215476,
+                -5.868176750336023
+            ],
+            "drift": 6.9229327351518775,
+            "threshold": 78.0426791986916
+        },
+        "P4_ST_FD": {
+            "error": 2.4033236262387984e-06,
+            "equation": "Sum",
+            "combination": [
+                "P4_ST_FD",
+                "P4_HT_FD"
+            ],
+            "parameters": [
+                0.2988892486550253,
+                -0.07902437335261425,
+                -2.432243289654665e-05
+            ],
+            "drift": 0.004312440827700877,
+            "threshold": 0.04218297673410819
+        },
+        "P4_ST_GOV": {
+            "error": 3973.9658247745733,
+            "equation": "Sum",
+            "combination": [
+                "P4_ST_GOV",
+                "P4_ST_LD"
+            ],
+            "parameters": [
+                0.8905829715844976,
+                5.519630520103471,
+                127.26456437966
+            ],
+            "drift": 173.31799112934488,
+            "threshold": 3053.65379386402
+        },
+        "P4_ST_LD": {
+            "error": 5.836884988983134,
+            "equation": "Sum",
+            "combination": [
+                "P4_ST_LD",
+                "P1_B2016"
+            ],
+            "parameters": [
+                1.0655814749547736,
+                -20.66946282480469,
+                6.915231255417382
+            ],
+            "drift": 6.564332459903764,
+            "threshold": 16.353409589035394
+        },
+        "P4_ST_PO": {
+            "error": 0.6782109065638243,
+            "equation": "Sum",
+            "combination": [
+                "P4_ST_PO",
+                "P4_ST_LD"
+            ],
+            "parameters": [
+                0.8948112867845079,
+                0.09918976326427685,
+                2.0114266425327147
+            ],
+            "drift": 2.215786355182874,
+            "threshold": 34.00791561269796
+        },
+        "P4_ST_PS": {
+            "error": 0.023147878253770997,
+            "equation": "Sum",
+            "combination": [
+                "P4_ST_PS",
+                "P1_FCV02Z"
+            ],
+            "parameters": [
+                0.9999985193878725,
+                1.6283023739821398e-05,
+                -2.9818684161950608e-05
+            ],
+            "drift": 0.3051674143568088,
+            "threshold": 49.69469820063541
+        },
+        "P4_ST_PT01": {
+            "error": 10.188009180549026,
+            "equation": "Product",
+            "combination": [
+                "P4_ST_PT01",
+                "P1_PIT01"
+            ],
+            "parameters": [
+                0.7640643831347526,
+                66.4626362437444,
+                2279.6589235437746
+            ],
+            "drift": 8.168616767857376,
+            "threshold": 670.2616243144682
+        },
+        "P4_ST_TT01": {
+            "error": 11.163358029146593,
+            "equation": "Sum",
+            "combination": [
+                "P4_ST_TT01",
+                "P1_TIT01"
+            ],
+            "parameters": [
+                0.9714211230896624,
+                0.9764461643753443,
+                754.1818954631633
+            ],
+            "drift": 8.756837711141646,
+            "threshold": 49.166523789512766
+        }
+    },
+    "sensor_order": [
+        "P1_B2004",
+        "P1_B2016",
+        "P1_B3004",
+        "P1_B3005",
+        "P1_B4002",
+        "P1_B4005",
+        "P1_B400B",
+        "P1_B4022",
+        "P1_FCV01D",
+        "P1_FCV01Z",
+        "P1_FCV02D",
+        "P1_FCV02Z",
+        "P1_FCV03D",
+        "P1_FCV03Z",
+        "P1_FT01",
+        "P1_FT01Z",
+        "P1_FT02",
+        "P1_FT02Z",
+        "P1_FT03",
+        "P1_FT03Z",
+        "P1_LCV01D",
+        "P1_LCV01Z",
+        "P1_LIT01",
+        "P1_PCV01D",
+        "P1_PCV01Z",
+        "P1_PCV02D",
+        "P1_PIT01",
+        "P1_PIT02",
+        "P1_PP01AD",
+        "P1_PP01AR",
+        "P1_PP01BD",
+        "P1_PP01BR",
+        "P1_PP02D",
+        "P1_PP02R",
+        "P1_STSP",
+        "P1_TIT01",
+        "P1_TIT02",
+        "P2_24Vdc",
+        "P2_ASD",
+        "P2_AutoGO",
+        "P2_CO_rpm",
+        "P2_Emerg",
+        "P2_HILout",
+        "P2_MSD",
+        "P2_ManualGO",
+        "P2_OnOff",
+        "P2_RTR",
+        "P2_TripEx",
+        "P2_VTR01",
+        "P2_VTR02",
+        "P2_VTR03",
+        "P2_VTR04",
+        "P2_VYT03",
+        "P3_FIT01",
+        "P3_LCP01D",
+        "P3_LCV01D",
+        "P3_LH",
+        "P3_LIT01",
+        "P3_LL",
+        "P3_PIT01",
+        "P4_HT_FD",
+        "P4_HT_LD",
+        "P4_HT_PO",
+        "P4_HT_PS",
+        "P4_LD",
+        "P4_ST_FD",
+        "P4_ST_GOV",
+        "P4_ST_LD",
+        "P4_ST_PO",
+        "P4_ST_PS",
+        "P4_ST_PT01",
+        "P4_ST_TT01"
+    ]
+}

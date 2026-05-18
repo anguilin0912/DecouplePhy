@@ -1,0 +1,23 @@
+{
+    "DecouplePhy": {
+        "_type": "DecouplePhy",
+        "model-file": "./HAI.model",
+        "ignore": [
+            "P1_PCV02Z",
+            "P2_SIT01",
+            "P2_SIT02",
+            "P2_VT01",
+            "P2_VXT02",
+            "P2_VXT03",
+            "P2_VYT02"
+        ],
+        "max_formel_length": 1,
+        "cpus": 4,
+    	"threshold_factor": 1.1,
+    	"cusum_factor": 3,
+
+    	"std_factor": 2.8,
+    	"dl_multiplier": 1.2,
+    	"debounce": 2
+    }
+}
